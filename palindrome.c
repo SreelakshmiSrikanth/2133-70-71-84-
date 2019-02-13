@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main()
 {
-    int n, reversedInteger = 0, remainder, originalInteger;
+    int n, reversedInteger = 0, remainder, OriginalInteger;
 
     printf("Enter an integer: ");
     scanf("%d", &n);
 
-    originalInteger = n;// reversed integer is stored in variable 
+    OriginalInteger = n;// reversed integer is stored in variable 
     while( n!=0 )
     {
         remainder = n%10;
@@ -15,10 +15,10 @@ int main()
     }
 
     // palindrome if orignalInteger and reversedInteger are equal
-    if (originalInteger == reversedInteger)
-        printf("%d is a palindrome.", originalInteger);
+    if (OriginalInteger == reversedInteger)
+        printf("%d is a palindrome.", OriginalInteger);
     else
-        printf("%d is not a palindrome.", originalInteger);
+        printf("%d is not a palindrome.", OriginalInteger);
     
     return 0;
 }
